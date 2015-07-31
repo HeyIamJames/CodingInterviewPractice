@@ -8,6 +8,8 @@ For example, the stock cost $500 at 10:30am, so stock_prices_yesterday[60] = 500
 Write an efficient algorithm for computing the best profit I could have made from 1 purchase and 1 sale of 1 Apple stock yesterday.
 
 No "shorting"—you must buy before you sell. You may not buy and sell in the same time step (at least 1 minute must pass).
+
+https://www.interviewcake.com/
 """
 
 def get_max_profit(stock_prices_yesterday):
