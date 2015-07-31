@@ -9,9 +9,9 @@ close_far(4, 1, 3) → True
 """
 
 def close_far(a, b, c):
-    if abs(b) - abs(a) <= 1 and abs(c) - abs(a) >= 2 and abs(c) - abs(b) >=2:
+    if abs(b) - abs(a) <= 1 and abs(c-a) >= 2 and abs(c-b) >=2:
         return True
-    elif abs(c) - abs(a) <= 1 and abs(b) - abs(a) >= 2 and abs(c) - abs(b) >=2:
+    elif abs(c) - abs(a) <= 1 and abs(b-a) >= 2 and abs(c-b) >=2:
         return True
     else:
         return False 
