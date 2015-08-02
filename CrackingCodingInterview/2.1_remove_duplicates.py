@@ -1,8 +1,13 @@
 #remove duplicates from an unsorted linked list
-from classes.LinkedList import *
 
 
-def foo():
-# start at head
-# iterate through at test if there is a node infront of current with same value
-
+def foo(linkedlist):
+    current_node = linkedlist.head
+    while current_node is not None:
+        checker_node = current_node
+        while checker_node.next is not None:
+            if checker_node.next.value == current_node.value:
+                checker_node.next = checker_node.next.next
+            else:
+                checker_node = checker_node.next
+        current_node = current_node.next
