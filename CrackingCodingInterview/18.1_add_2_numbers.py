@@ -1,9 +1,12 @@
 #add two numbers without using operators
+"""
+18.1 Write a function that adds two numbers. You should not use + or any arithmetic
+operators.
+"""
+
 
 def foo(a, b):
-    #perhaps translate to byte strings and use bit shifts
-    #perhaps import c handlers and manipulate on low level
-    #perhaps i can iterating thorugh a, then b and append some counter to a list and find the len of the list.
+"""iterate through a and b, count iteration via a list, check len"""
     x = []
     for i in range(a):
             x.append(a)
