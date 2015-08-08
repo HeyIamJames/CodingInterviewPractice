@@ -22,7 +22,7 @@ child can run up the stairs.
 # sum the counters:
 # 1 + 2 + 2 = 5
 
-
+#number of permutations
 def run(stairs, step_range=3):
     if not stairs:
         return 1
@@ -34,21 +34,8 @@ def run(stairs, step_range=3):
             total += run(stairs - n, step_range=step_range)
         return total
 
-
+#extend for 3
 def fibR(n):
     if n == 1 or n == 2:
         return 1
     return fibR(n - 1) + fibR(n - 2)
-
-
-#number of permutations
-def nways(steps, max_steps=3):
-    if not steps:
-        return 1
-    elif steps < 0:
-        return 0
-    else:
-        total = 0
-        for n in xrange(1, min(steps, max_steps) + 1):
-            total += nways(steps - n, max_steps=max_steps)
-        return total
