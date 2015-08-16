@@ -11,3 +11,14 @@ Psudo Code:
     -stack#
     -array = sizestack X stack#s
     -pointer based on stack#
+    
+  ClassMethods:
+  
+  Push:
+    -point at end of stack in array and add self
+    -increment pointer/stackszie
+    
+  Pop:
+    -point at end of stack in array and remove self
+    -decrement pointer/stackszie
+
