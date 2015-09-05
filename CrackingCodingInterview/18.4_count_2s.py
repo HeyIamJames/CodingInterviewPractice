@@ -11,4 +11,3 @@ write a method to count the number of 2's in range n
 # counter is number of 2's
 
 def count2():
-    
