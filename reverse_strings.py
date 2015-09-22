@@ -11,3 +11,6 @@ return in reverse
 - possible to do in place by switching all word positions,
 then reverse recursively
 """
+
+    def reversestring(str):
+      " ".join(str.split()[::-1])
