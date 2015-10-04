@@ -10,4 +10,6 @@ write a method to count the number of 2's in range n
 # if anything in string = 2, counter += 1
 # counter is number of 2's
 
-def count2():
+def count2(d, n):
+    sd = str(d)
+    return sum(str(i).count(sd) for i in range(n+1))
