@@ -9,3 +9,16 @@ EXAMPLE:
 Input: N = 10000000000, M = 10011, i = 2, j = 6
 Output: N = 10001001100
 """
+
+def merge(n,m, i, j):
+    val1  = ~0
+    val1  = val1 << j 
+    val2 = (1 << (i+1)) -1 
+    mask = val1 | val2 
+        
+    ncleared = n & mask
+    print bin(ncleared)
+    mshifted = m << i
+    print bin(mshifted)
+    result = ncleared | mshifted
+    return result
