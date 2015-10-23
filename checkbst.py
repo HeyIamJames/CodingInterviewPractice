@@ -8,3 +8,13 @@ http://www.ardendertat.com/2011/10/10/programming-interview-questions-7-binary-s
 class Node:
     def __init__(self, val=None):
         self.left, self.right, self.val = None, None, val
+
+INFINITY = float("infinity")
+NEG_INFINITY = float("-infinity")
+
+def isBST(tree, lastNode=[NEG_INFINITY]):
+    if tree is None:
+        return True
+    if not isBST(tree.left, lastNode):
+        return False
+    
