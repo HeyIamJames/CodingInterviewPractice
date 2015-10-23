@@ -9,28 +9,27 @@ http://www.ardendertat.com/2011/10/10/programming-interview-questions-6-combine-
 
 """
 check if len str3 is = len str1 + str 2
-check if start of str 1 or 2 = start of 3
-either false = false
-if and only if 
-
-or.. check all odd / indexs of str 1 in 3
+check all odd / indexs of str 1 in 3
 based on that check all indexes of str 2 in 3
+then if not try other other way
 
 """
 
-#slow solution
 def isShuffle(str1, str2, str3):
     if len(str3) != len(str1 + str2):
         return False
-    x = len(str3)
-    odd = []
-    for i in range(x):
-        if i % 2 == 1:
-            odd.append(i)
-    even = []
-    for i in range(x):
-        if i % 2 == 0:
-            even.append(i)
+    if str1 == str3[0::2] and str2 == str3[1::2]:
+        return True
+    if str2 == str3[0::2] and str1 == str3[1::2]:
+        return True
+    else:
+        return False
+#fail
+str1 = "the apple"
+str2 = "pears"
+str3 = "james hemmaplardh"
 
-
-    elif 
+#pass
+str1 = "apple"
+str2 = "pears"
+str3 = "appepalres"
