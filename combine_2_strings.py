@@ -7,6 +7,27 @@ right ordering of the characters from each string.
 http://www.ardendertat.com/2011/10/10/programming-interview-questions-6-combine-two-strings/
 """
 
+"""
+check if len str3 is = len str1 + str 2
+check if start of str 1 or 2 = start of 3
+either false = false
+if and only if 
 
+or.. check all odd / indexs of str 1 in 3
+based on that check all indexes of str 2 in 3
+
+"""
+
+#slow solution
 def isShuffle(str1, str2, str3):
-    
+    x = len(str3)
+    odd = []
+    for i in range(x):
+        if i % 2 == 1:
+            odd.append(i)
+    return odd
+
+    if len(str3) != len(str1 + str2):
+        return False
+
+    elif 
