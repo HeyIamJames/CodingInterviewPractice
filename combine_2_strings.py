@@ -20,14 +20,17 @@ based on that check all indexes of str 2 in 3
 
 #slow solution
 def isShuffle(str1, str2, str3):
+    if len(str3) != len(str1 + str2):
+        return False
     x = len(str3)
     odd = []
     for i in range(x):
         if i % 2 == 1:
             odd.append(i)
-    return odd
+    even = []
+    for i in range(x):
+        if i % 2 == 0:
+            even.append(i)
 
-    if len(str3) != len(str1 + str2):
-        return False
 
     elif 
