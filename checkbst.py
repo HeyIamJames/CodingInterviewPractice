@@ -17,4 +17,7 @@ def isBST(tree, lastNode=[NEG_INFINITY]):
         return True
     if not isBST(tree.left, lastNode):
         return False
-    
+    if tree.val < lastNode[0]:
+        return False
+    lastNode[0] = tree.val
+    return isBST(tree.right, lastNode)
