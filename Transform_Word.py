@@ -6,3 +6,8 @@ which has the smallest number of intermediate words.
 http://www.ardendertat.com/2011/10/17/programming-interview-questions-8-transform-word
 """
 
+def constructGraph(dictionary):
+    graph=collections.defaultdict(list) 
+    letters=string.lowercase 
+    for word in dictionary:
+        for i in range(len(word)):
