@@ -11,3 +11,7 @@ def constructGraph(dictionary):
     letters=string.lowercase 
     for word in dictionary:
         for i in range(len(word)):
+         #remove 1 character
+         remove=word[:i]+word[i+1:] 
+         if remove in dictionary:
+             graph[word].append(remove)
