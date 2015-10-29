@@ -5,5 +5,8 @@ and k is 3 then the result is 2, because it’s the 3rd element in sorted
 order (but the 3rd distinct element is 3).
 """
 
-def kthLargest1(arr, k):
-    k[arr.sorted()]
+def kthLargest(arr, k):
+    v = arr[:]
+    v.sort()
+    return v[k]
+
