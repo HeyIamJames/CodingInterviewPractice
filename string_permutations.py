@@ -7,3 +7,8 @@ P(n,k) = n! / (n-k)!
 
 
 def permutate(str):
+    if len(str) == 1:
+        return str
+    perms = permutate(word[1:])
+    char = word[0]
+    result = []
