@@ -19,3 +19,10 @@ def permutate(string):
     return result
 
 #string = james, expected = ['james', 'ajmes', 'amjes', 'amejs', 'amesj']
+
+
+#import hack
+
+from itertools import permutations
+def permutate2(string):
+    return [''.join(p) for p in permutations(string)]
