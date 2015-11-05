@@ -5,3 +5,8 @@ Write a function that finds the median of the already received numbers efficient
 We will be asked to find the median multiple times.
 """
 
+def findMedian(stream):
+    if stream % 2 == 0:
+        return (-1*steam.maxHeap[0]+stream.minHeap[0])/2.0
+    else: 
+        eturn -1*stream.maxHeap[0]
