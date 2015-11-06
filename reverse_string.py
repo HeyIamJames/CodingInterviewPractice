@@ -8,3 +8,7 @@ Also remove all leading and trailing whitespaces. So, the output for ”   CS de
 http://www.ardendertat.com/2011/10/31/programming-interview-questions-12-reverse-words-in-a-string/
 """
 
+def reverseString(words):
+    for i in words:
+      
+        if i = ""
