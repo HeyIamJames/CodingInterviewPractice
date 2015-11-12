@@ -7,3 +7,4 @@ convert it to:
 
 def convert(l):
 return zip(l[0:len(l)/3],l[len(l)/3:2*len(l)/3],l[2*len(l)/3:])
+
