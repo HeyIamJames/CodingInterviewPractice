@@ -10,5 +10,25 @@ http://www.ardendertat.com/2011/10/31/programming-interview-questions-12-reverse
 
 def reverseString(words):
     for i in words:
-      
+              
         if i = ""
+
+def giveme(s, words=()):
+    lista = s.split()
+    return [lista[item-1] for item in words]
+
+mystring = "You have 15 new messages and the size is 32000"
+position = (3, 10)
+print giveme(mystring, position)
+
+
+
+def giveme(s, words=()):
+    lista = s.split()
+    return [lista[item-1] for item in words]   
+
+mystring = "You have 15 new messages and the size is 32000"
+position = (3, 10)
+print giveme(mystring, position)
+
+it prints -> ['15', '32000']
